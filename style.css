@@ -1,0 +1,14 @@
+/* bordered form */
+form{
+    border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=pass]{
+    width: 100%;
+    padding: 12px 20px;
+    
+
+
+    
+
+
+}
