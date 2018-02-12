@@ -11,4 +11,3 @@ $query->execute();
 $results = $query->fetchAll(PDO::FETCH_OBJ);
 
 require "index.view.php";
-

@@ -3,16 +3,18 @@
 /**
  * Class Connection to Database
  */
+
 class Connection
 {
+
     /**
      * create
      *
      * @return void PDO nstance
      */
+    
     public static function create()
     {
-
         try
         {
             return $pdo = new PDO('mysql:host=localhost;dbname=td_ems', 'root', '');
