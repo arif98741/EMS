@@ -1,15 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Trendy_Devs_1
- * Date: 2/11/2018
- * Time: 5:10 PM
- */
 
+/**
+ * Class Connection to Database
+ */
 class Connection
 {
+    /**
+     * create
+     *
+     * @return void PDO nstance
+     */
     public static function create()
     {
+
         try
         {
             return $pdo = new PDO('mysql:host=localhost;dbname=td_ems', 'root', '');
@@ -19,6 +22,7 @@ class Connection
         {
             die('<div id="db-warning">' . 'Connection Failed. Reason: ' . '<mark>' . $e->getMessage() . '</mark> </div>');
         }
-
     }
 }
+
+
