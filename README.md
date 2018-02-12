@@ -5,4 +5,4 @@
 | Collaborator | Rank  | Skill  |
 | ------------- |:------:| -----:|
 | Sonnet     | CEO |html5, css3 & js |
-| Tariq      | Member      |php, css3 & svg |
+| Tariq      | Developer      |php, css3 & svg |
