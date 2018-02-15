@@ -36,23 +36,21 @@
             <th>Status</th>
         </tr>
 
+        <?php foreach ($results as $r){ 
+         // you need to use foreach loop for getting exact size of the array
+        //you can't use echo for printing array as you   got array from db
+        //always try to use print_r or var_dump function to see what you are getting from db.
 
-
-
-<!-- How can i output all the rows here ??  -->
-        <?php while($row = $results): ?>
-                                                                                                 
+         ?>
             <tr>
-                <td><?= $row[0]; ?></td>
-                <td><?= $row[1]; ?></td>
-                <td><?= $row[2]; ?></td>
-                <td><?= $row[3]; ?></td>
-                <td><?= $row[4]; ?></td>
-                <td><?= $row[5]; ?></td>
-                <td><?= $row[6]; ?></td>
-            </tr>
+               <?php foreach ($r as $value) { ?>
 
-        <?php endwhile; ?>
+                    <?php echo "<td>".$value."</td>"; ?>
+
+                <?php   } ?>
+              
+           </tr>
+        <?php } ?>
 
     </table>
   </div>
