@@ -15,6 +15,7 @@ class Connection
     
     public static function create()
     {
+        
         try
         {
             return $pdo = new PDO('mysql:host=localhost;dbname=td_ems', 'root', '');

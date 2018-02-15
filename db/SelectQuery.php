@@ -16,7 +16,7 @@ class SelectQuery
         $statement = $this->pdo->prepare("SELECT * FROM {$table}");
         $statement->execute();
 
-        return $statement->fetchAll();
+        return $statement->fetchAll(PDO::FETCH_NUM);
     }
 
 }
